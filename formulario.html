@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .login {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .login h1 {
+            text-align: center;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Cadastro</h1>
+        <form action="recupera-dados.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control" required placeholder="Nome">
+            <br>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email" class="form-control" required placeholder="E-mail">
+            <br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" class="form-control" required placeholder="Idade">
+            <br>
+
+            <label for="hobby">Hobby:</label>
+            <input type="text" name="hobby" id="hobby" class="form-control" required placeholder="Hobby">
+            <br>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
